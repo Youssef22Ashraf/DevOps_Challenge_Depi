@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: go-app
-          image: your-dockerhub-username/go-app:latest  # Update with your image
+          image: youssefashraf265/go-web-app-optimized:latest  # Update with your image
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           env:
             - name: REDIS_HOST
               value: "redis.db.svc.cluster.local"
@@ -35,6 +35,6 @@ spec:
     app: go-app
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 80
+      targetPort: 80
       nodePort: 30080  # Expose on this port
