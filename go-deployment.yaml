@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: go-app
+  name: go-app-service
   namespace: app
 spec:
   type: NodePort
