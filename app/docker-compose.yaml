@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    image: my-go-app:1.0  # Use the built Docker image
+    build: .
+    ports:
+      - "8080:80"  # Expose the app on port 8080
+    depends_on:
+      - redis
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      APP_PORT: 80
+
+  redis:
+    image: redis:alpine
+    container_name: redis-container
+    ports:
+      - "6379:6379"
+    restart: always

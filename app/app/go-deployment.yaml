@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-app
+  namespace: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-app
+  template:
+    metadata:
+      labels:
+        app: go-app
+    spec:
+      containers:
+        - name: go-app
+          image: youssefashraf265/go-app-image:latest  # Updated DockerHub image
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: go-app-config  # Load environment variables from ConfigMap

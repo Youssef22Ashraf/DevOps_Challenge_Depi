@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: go-app-config
+  namespace: app
+data:
+  REDIS_HOST: "redis-0.redis.db.svc.cluster.local"  # Stable network ID
+  REDIS_PORT: "6379"
+  APP_PORT: "80"
+
