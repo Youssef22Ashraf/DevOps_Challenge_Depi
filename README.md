@@ -64,14 +64,14 @@ This repository contains:
  ┃ ┣ 📂 app  
  ┃ ┃ ┣ 📜 go-configmap.yaml  
  ┃ ┃ ┣ 📜 go-deployment.yaml  
- ┃ ┃ ┣ 📜 go-service.yaml  
- ┣ 📂 db  
- ┃ ┣ 📜 redis-deployment.yaml  
- ┃ ┗ 📜 redis-service.yaml  
- ┣ 📜 Dockerfile  
- ┣ 📜 docker-compose.yaml  
- ┣ 📜 go.mod  
- ┣ 📜 main.go  
+ ┃ ┃ ┗ 📜 go-service.yaml  
+ ┃ ┣ 📂 db  
+ ┃ ┃ ┣ 📜 redis-deployment.yaml  
+ ┃ ┃ ┗ 📜 redis-service.yaml  
+ ┃ ┣ 📜 Dockerfile  
+ ┃ ┣ 📜 docker-compose.yaml  
+ ┃ ┣ 📜 go.mod  
+ ┃ ┗ 📜 main.go  
  ┣ 📜 README.md  
  
 
